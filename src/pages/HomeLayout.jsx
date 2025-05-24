@@ -1,6 +1,6 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Outlet, useNavigation } from "react-router-dom";
-import Footer from "@/components/Footer";
 
 const HomeLayout = () => {
   // global loading
@@ -12,7 +12,6 @@ const HomeLayout = () => {
       <section className="page">
         {isPageLoading ? <div className="loading" /> : <Outlet />}
       </section>
-
       <Footer />
     </main>
   );
